@@ -1,0 +1,120 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Flyers_Motor_Sports.View.CreateJobPage">
+
+    <NavigationPage.TitleView>
+        <StackLayout Padding="-10,-10,0,-7" Orientation="Horizontal" HorizontalOptions="StartAndExpand" VerticalOptions="StartAndExpand"
+                     BackgroundColor="Transparent">
+            <Image Source="circlelogo.jpg" VerticalOptions="StartAndExpand" WidthRequest="70" HeightRequest="70" Aspect="AspectFill"/>
+            <Label Margin="3,0,0,0" Text="Create Job" TextColor="White" FontSize="19" FontFamily="ProductSansMedium"
+                   VerticalTextAlignment="Center"/>
+        </StackLayout>
+    </NavigationPage.TitleView>
+
+    <StackLayout BackgroundColor="White">
+    <StackLayout Margin="10,10,10,10" VerticalOptions="FillAndExpand">
+        <Frame CornerRadius="10" Margin="7,10,7,0" HeightRequest="80" HasShadow="True" BorderColor="White" BackgroundColor="White">
+            <StackLayout>
+                <StackLayout Orientation="Horizontal" VerticalOptions="Center" BackgroundColor="Transparent">
+                    <Label Text="Vehicle Number" FontSize="18" TextColor="DimGray" FontFamily="ProductSansRegular"
+                       VerticalTextAlignment="Center"/>
+                    <Entry Text="" FontSize="18" TextColor="DimGray" FontFamily="ProductSansRegular"
+                       VerticalTextAlignment="Center"/>
+                </StackLayout>
+                <StackLayout Orientation="Horizontal" VerticalOptions="Center" BackgroundColor="Transparent">
+                    <Label Text="Submitted by:" FontSize="18" TextColor="DimGray" FontFamily="ProductSansRegular"
+                           VerticalTextAlignment="Center"/>
+                    <Entry Text="" FontSize="18" TextColor="DimGray" FontFamily="ProductSansRegular"
+                           VerticalTextAlignment="Center"/>
+                </StackLayout>
+                <StackLayout Orientation="Horizontal" VerticalOptions="Center" BackgroundColor="Transparent">
+                    <Label Text="Date Submitted:" FontSize="18" TextColor="DimGray" FontFamily="ProductSansRegular"
+                           VerticalTextAlignment="Center"/>
+                    <Label Text="Nov 30, 2022" FontSize="18" TextColor="DimGray" FontFamily="ProductSansRegular"
+                           VerticalTextAlignment="Center"/>
+                </StackLayout>
+            </StackLayout>
+        </Frame>
+
+        <Frame CornerRadius="10" Padding="5" Margin="7,10,7,0" HasShadow="True" BorderColor="White" BackgroundColor="White">
+                <StackLayout>
+                    <StackLayout Orientation="Horizontal" VerticalOptions="Center" BackgroundColor="Transparent" Padding="0">
+                        <Label Text="Modification Required on" FontSize="18" TextColor="DimGray" FontFamily="ProductSansRegular"
+                               VerticalTextAlignment="Center"/>
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal" Margin="10,0,0,0">
+                        <Label Text="Denting" FontSize="18" TextColor="DimGray" FontFamily="ProductSansRegular" 
+                               VerticalTextAlignment="Center" WidthRequest="100"/>
+                        <CheckBox/>
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal" Margin="10,0,0,0">
+                        <Label Text="Moulding" FontSize="18" TextColor="DimGray" FontFamily="ProductSansRegular" 
+                               VerticalTextAlignment="Center" WidthRequest="100"/>
+                        <CheckBox/>
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal" Margin="10,0,0,0">
+                        <Label Text="Fabrication" FontSize="18" TextColor="DimGray" FontFamily="ProductSansRegular" 
+                               VerticalTextAlignment="Center" WidthRequest="100"/>
+                        <CheckBox/>
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal" Margin="10,0,0,0">
+                        <Label Text="Painting" FontSize="18" TextColor="DimGray" FontFamily="ProductSansRegular" 
+                               VerticalTextAlignment="Center" WidthRequest="100"/>
+                        <CheckBox/>
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal" Margin="10,0,0,0">
+                        <Label Text="Detailing" FontSize="18" TextColor="DimGray" FontFamily="ProductSansRegular" 
+                               VerticalTextAlignment="Center" WidthRequest="100"/>
+                        <CheckBox/>
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal" Margin="10,0,0,0">
+                        <Label Text="Cleaning" FontSize="18" TextColor="DimGray" FontFamily="ProductSansRegular" 
+                               VerticalTextAlignment="Center" WidthRequest="100"/>
+                        <CheckBox/>
+                    </StackLayout>
+                </StackLayout>
+            </Frame>
+        <Frame CornerRadius="10" Margin="7,10,7,0" HasShadow="True" BorderColor="White" BackgroundColor="White">
+            <StackLayout>
+                <StackLayout Orientation="Horizontal" VerticalOptions="Center" BackgroundColor="Transparent">
+                    <Label Text="Job 1" FontSize="18" TextColor="DimGray" FontFamily="ProductSansRegular"
+                       VerticalTextAlignment="Center"/>
+                    <BoxView WidthRequest="100"/>
+                    <CheckBox Color="Gray"/>
+                </StackLayout>
+                <StackLayout Orientation="Horizontal" VerticalOptions="Center" BackgroundColor="Transparent">
+                    <Label Text="Job 2" FontSize="18" TextColor="DimGray" FontFamily="ProductSansRegular"
+                       VerticalTextAlignment="Center"/>
+                    <BoxView WidthRequest="100"/>
+                    <CheckBox Color="Gray"/>
+                </StackLayout>
+                <StackLayout Orientation="Horizontal" VerticalOptions="Center" BackgroundColor="Transparent">
+                    <Label Text="Job 3" FontSize="18" TextColor="DimGray" FontFamily="ProductSansRegular"
+                       VerticalTextAlignment="Center"/>
+                    <BoxView WidthRequest="100"/>
+                    <CheckBox Color="Gray"/>
+                </StackLayout>
+                <StackLayout Orientation="Horizontal" VerticalOptions="Center" BackgroundColor="Transparent">
+                    <Label Text="Job 4" FontSize="18" TextColor="DimGray" FontFamily="ProductSansRegular"
+                       VerticalTextAlignment="Center"/>
+                    <BoxView WidthRequest="100"/>
+                    <CheckBox Color="Gray"/>
+                </StackLayout>
+                <StackLayout Orientation="Horizontal" VerticalOptions="Center" BackgroundColor="Transparent">
+                    <Label Text="Job 5" FontSize="18" TextColor="DimGray" FontFamily="ProductSansRegular"
+                       VerticalTextAlignment="Center"/>
+                    <BoxView WidthRequest="100"/>
+                    <CheckBox Color="Gray"/>
+                </StackLayout>
+                <StackLayout Orientation="Horizontal" VerticalOptions="Center" BackgroundColor="Transparent">
+                    <Label Text="Job 6" FontSize="18" TextColor="DimGray" FontFamily="ProductSansRegular"
+                       VerticalTextAlignment="Center"/>
+                    <BoxView WidthRequest="100"/>
+                    <CheckBox Color="Gray"/>
+                </StackLayout>
+            </StackLayout>
+        </Frame>
+    </StackLayout>
+    </StackLayout>
+</ContentPage>
