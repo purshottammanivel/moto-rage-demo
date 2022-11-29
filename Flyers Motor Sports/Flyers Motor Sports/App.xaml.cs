@@ -1,5 +1,4 @@
-﻿using Flyers_Motor_Sports.View;
-using System;
+﻿using System;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 

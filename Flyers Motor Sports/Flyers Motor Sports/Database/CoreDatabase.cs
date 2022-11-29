@@ -20,16 +20,28 @@ namespace Flyers_Motor_Sports.Database
 
         public CoreDatabase()
         {
-            var basePath = Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData);
-            basePath = Path.Combine(basePath, DatabaseFilename);
-            Database = new SQLiteAsyncConnection(basePath, Flags);
-            this.CreateTable();
+            string basePath = Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData);
+            string dbFilePath = Path.Combine(basePath, DatabaseFilename);
+            Database = new SQLiteAsyncConnection(dbFilePath, Flags);
+            if (!File.Exists(dbFilePath))
+            {
+                this.CreateTable();
+            }
         }
+
+        //private async void CreateTable()
+        //{
+        //    CreateTableResult result = await Database.CreateTableAsync<Job>();
+        //    CreateTableResult jobsresult = await Database.CreateTableAsync<Employee>();
+        //    CreateTableResult modificationResult = await Database.CreateTableAsync<Modification>();
+        //    CreateTableResult cardResult = await Database.CreateTableAsync<Car>();
+        //}
 
         private async void CreateTable()
         {
-            CreateTableResult result = await Database.CreateTableAsync<Department>();
-            CreateTableResult jobsresult = await Database.CreateTableAsync<Jobs>();
+            CreateTableResult result = await Database.CreateTableAsync<Job>();
+            CreateTableResult jobsresult = await Database.CreateTableAsync<Employee>();
+            CreateTableResult modificationResult = await Database.CreateTableAsync<Modification>();
         }
     }
 }

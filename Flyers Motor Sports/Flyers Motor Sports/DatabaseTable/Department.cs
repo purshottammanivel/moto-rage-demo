@@ -8,10 +8,10 @@ namespace Flyers_Motor_Sports.DatabaseTable
     {
         public string Name { get; set; }
 
-        public List<Employee> Employees { get; set; }
+        public List<EmployeeModel> Employees { get; set; }
     }
 
-    public class Employee
+    public class EmployeeModel
     {
         public string Name { get; set; }
     }
