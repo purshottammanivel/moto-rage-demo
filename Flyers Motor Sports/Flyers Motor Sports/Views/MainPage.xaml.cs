@@ -16,16 +16,12 @@ namespace Flyers_Motor_Sports
             InitializeComponent();
         }
 
-        protected override void OnAppearing()
+        private async void CreateJob_Clicked(object sender, EventArgs e)
         {
-            base.OnAppearing();
-            if (AvailableofJobs != null )
-            {
-                AvailableofJobs.ItemsSource = repository.GetAvailableJobs();
-            }
+            await Navigation.PushAsync(new CreateJobPage());
         }
 
-        private async void CreateJob_Clicked(object sender, EventArgs e)
+        private async void CreateCheckList_Clicked(object sender, EventArgs e)
         {
             await Navigation.PushAsync(new CreateJobPage());
         }
